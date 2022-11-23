@@ -9,7 +9,7 @@ const blogRoutes = require("./routes/blogRoutes");
 
 //Database Connections
 const dbURI =
-  "mongodb+srv://semih:552003@cluster0.caqcmmk.mongodb.net/Blogs?retryWrites=true&w=majority";
+  "MongoDBURL";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
